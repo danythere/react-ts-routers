@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 export const Navbar: React.FunctionComponent = () => (
   <nav>
     <div className="nav-wrapper cyan lighten-3 px1">
@@ -8,10 +8,10 @@ export const Navbar: React.FunctionComponent = () => (
       </a>
       <ul id="nav-mobile" className="right ">
         <li>
-          <a href="/">Список дел</a>
+          <NavLink to="/">Список дел</NavLink>
         </li>
         <li>
-          <a href="/">Информация</a>
+          <NavLink to="/about">Информация</NavLink>
         </li>
       </ul>
     </div>
